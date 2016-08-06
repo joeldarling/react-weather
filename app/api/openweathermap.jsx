@@ -15,10 +15,10 @@ function getTemp(location){
     } else {
       return res.data.main.temp;
     }
-  })
-  .catch(function(res){
+  }, function(res){
     throw new Error(res.data.message);
-  })
+  });
+
 }
 
 module.exports = {
