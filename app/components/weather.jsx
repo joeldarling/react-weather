@@ -4,8 +4,6 @@ const WeatherForm = require('WeatherForm');
 const WeatherMessage = require('WeatherMessage');
 const openWeatherMap = require('openWeatherMap');
 
-console.log(openWeatherMap.getTemp);
-
 const Weather = React.createClass({
   getInitialState: function(){
     return {

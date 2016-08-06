@@ -1,5 +1,20 @@
+const webpack = require('webpack');
+
 module.exports = {
-  entry: './app/app.jsx', //source
+  entry: [
+    'script!jquery/dist/jquery.min.js',
+    'script!foundation-sites/dist/foundation.min.js',
+    './app/app.jsx'
+  ], //source
+  externals:{
+    jquery: 'jQuery'
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery'
+    })
+  ],
   output: {
     path: __dirname, //rootpath
     filename: './public/bundle.js' //output filename
@@ -32,5 +47,4 @@ module.exports = {
     ]
   },
   devtool: 'cheap-module-eval-source-map'
-
 };
