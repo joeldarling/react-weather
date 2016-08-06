@@ -3,8 +3,13 @@ const React = require('react');
 const About = (props) => {
   return (
     <div>
-      <h3> About </h3>
-      <p> This is the about page </p>
+      <h1 className="text-center"> About </h1>
+      <p> This is a small weather app I built using React and OpenWeatherMap in order to learn React basics. </p>
+      <ul>
+        <li>
+          <a href='https://github.com/joeldarling/react-weather'> Check out the repo.</a>
+        </li>
+      </ul>
     </div>
   );
 }
