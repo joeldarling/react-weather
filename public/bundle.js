@@ -28652,18 +28652,13 @@
 
 	var React = __webpack_require__(1);
 
-	var About = React.createClass({
-	  displayName: 'About',
-
-	  render: function render() {
-	    return React.createElement(
-	      'h3',
-	      null,
-	      ' About '
-	    );
-	  }
-
-	});
+	var About = function About(props) {
+	  return React.createElement(
+	    'h3',
+	    null,
+	    ' About '
+	  );
+	};
 
 	module.exports = About;
 
