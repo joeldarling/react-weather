@@ -14,6 +14,7 @@ module.exports = {
       Examples: 'app/components/examples.jsx',
       WeatherForm: 'app/components/WeatherForm.jsx',
       WeatherMessage: 'app/components/WeatherMessage.jsx',
+      openWeatherMap: 'app/api/openweathermap.jsx'
 
     },
     extensions: ['', '.js', '.jsx'] //list of file exts webpack should process
